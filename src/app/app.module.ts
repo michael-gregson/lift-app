@@ -8,12 +8,16 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './shared/modules/material.module';
 import { HeaderComponent } from './layout/header/header.component';
 import { NavigationComponent } from './layout/navigation/navigation.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProgramsComponent } from './programs/programs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NavigationComponent
+    NavigationComponent,
+    DashboardComponent,
+    ProgramsComponent
   ],
   imports: [
     BrowserModule,
