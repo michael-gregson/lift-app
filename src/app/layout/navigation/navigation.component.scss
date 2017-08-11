@@ -1,0 +1,65 @@
+.navigation-title-area {
+    margin-top: 64px;
+    margin-bottom: 16px;
+    min-width: 256px;
+    max-width: 400px;
+}
+
+.navigation-content-area {
+    margin-bottom: 8px;
+}
+
+.navigation-status-bar {
+    height: 24px;
+}
+
+.navigation-title {
+    height: 84px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.navigation-title button[md-fab] {
+    height: 65px;
+    width: 65px;
+}
+
+.navigation-subtitle {
+    height: 56px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 16px;
+}
+
+.navigation-name {
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.navigation-email-address {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.navigation-content-area nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation-content-area nav a {
+    width: 100%;
+    text-align: left;
+    height: 48px;
+    line-height: 48px;
+    font-weight: bolder;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.navigation-content-area nav md-icon {
+    height: 18px;
+    width: 18px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.54);
+    margin-right: 38px;
+}
