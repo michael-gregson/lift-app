@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'app';
 
   @ViewChild('sidenav') sideNav: MdSidenav;
-  
+
   toggleSidenav() {
       this.sideNav.toggle();
   }
