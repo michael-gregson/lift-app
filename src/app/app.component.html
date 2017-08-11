@@ -1,3 +1,10 @@
-<app-header></app-header>
+<md-sidenav-container fullscreen>
+    <md-sidenav #sidenav>
+        <app-navigation></app-navigation>
+    </md-sidenav>
 
-<router-outlet></router-outlet>
+    <div>
+        <app-header (toggleNavigation)="toggleSidenav()"></app-header>
+        <router-outlet></router-outlet>
+    </div>
+</md-sidenav-container>
