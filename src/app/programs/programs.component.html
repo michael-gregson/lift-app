@@ -1,3 +1,17 @@
-<p>
-  programs works!
-</p>
+<md-card *ngFor="let program of programs" class="program-card">
+  <md-card-header>
+    <div md-card-avatar class="avatar-image"></div>
+    <md-card-title>{{program.name}}</md-card-title>
+    <md-card-subtitle>{{program.category}}</md-card-subtitle>
+  </md-card-header>
+  <img md-card-image src="../../assets/img/accent.svg">
+  <md-card-content>
+    <p>
+      {{program.description}}
+    </p>
+  </md-card-content>
+  <md-card-actions>
+    <a md-button>START</a>
+    <a md-button>EXPLORE</a>
+  </md-card-actions>
+</md-card>
