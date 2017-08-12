@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpModule } from '@angular/http';
 import 'hammerjs';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api/in-memory-web-api.module';
+import { InMemoryDataService } from './shared/services/in-memory-data.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +13,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { NavigationComponent } from './layout/navigation/navigation.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgramsComponent } from './programs/programs.component';
+import { ProgramService } from './programs/program.service';
 
 @NgModule({
   declarations: [
@@ -21,10 +25,12 @@ import { ProgramsComponent } from './programs/programs.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    HttpModule,
+    InMemoryWebApiModule.forRoot(InMemoryDataService),
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [ProgramService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
