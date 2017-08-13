@@ -13,7 +13,7 @@ export class InMemoryDataService implements InMemoryDbService {
       id: 2,
       name: '5x5',
       category: 'strength',
-      description: 'The most popular strength and muscle building program on the internet because it’s simple and works.'
+      description: 'The most popular strength program on the internet because it’s simple and works.'
     }
     ];
     return {programs};
