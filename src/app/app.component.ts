@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { MdSidenav } from '@angular/material';
+import { Router, NavigationStart } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,19 @@ export class AppComponent {
 
   @ViewChild('sidenav') sideNav: MdSidenav;
 
+  constructor(router: Router) {
+    router.events.forEach((event) => {
+      if (event instanceof NavigationStart) {
+        this.hideSidenav();
+      }
+    });
+  }
+
   toggleSidenav() {
       this.sideNav.toggle();
+  }
+
+  hideSidenav() {
+    this.sideNav.close();
   }
 }

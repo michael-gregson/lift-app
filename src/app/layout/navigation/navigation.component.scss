@@ -63,3 +63,13 @@
     color: rgba(0, 0, 0, 0.54);
     margin-right: 38px;
 }
+
+//TODO: Replace hard coded colour with primary imported from theme
+.navigation-content-area nav a.active-link {
+    color: rgb(63,81,181);
+    background-color: rgb(224,224,224);
+}
+
+.navigation-content-area nav a.active-link md-icon {
+    color: rgb(63,81,181);
+}
